@@ -5,15 +5,14 @@ A wrapper to simplify using the Asio library for asynchronous networking in open
 ## Requirements
 
 ### Linux
+This code has been tested using openFrameworks 0.11.0 on Ubuntu 20.04
 You'll need to add the Asio library to your system, e.g. "sudo apt install libasio-dev". Use the supplied qtCreator projects, or just type 'make'.
 
 ### Windows
-To use this add-on, use the projector generator.  Once you've created a project, use the `ofxAsio.props` property sheet in `config/` to set up your compiler properly. You'll need to add and configure the Asio library manually - see https://think-async.com/Asio/
-
-This library has been tested with Visual Studio 2015 and openFrameworks v0.9.1
+This project is currently not configured for Windows but should work with some configuration. Happy to take pull requests.
 
 ### OSX
-This project is currently not configured for Xcode in OSX.  If anyone wants to take this on, I'd be glad to help.  Otherwise you'll have to wait until I have a reason to need it on my Mac :)
+This project is currently not configured for MacOS but should work with some configuration. Happy to take pull requests.
 
 ## Usage
 `ofxAsio` is a a relatively minimal wrapper around the Asio library to try to make networking easier.  There are two main classes, one for sending UDP messages (`UdpSender`) and one for receiving UDP messages (`UdpReceiver`).
