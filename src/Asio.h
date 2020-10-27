@@ -1,0 +1,5 @@
+#pragma once
+
+#define ASIO_STANDALONE
+#define ASIO_HAS_STD_ATOMIC
+#define ASIO_HAS_STD_TYPE_TRAITS
