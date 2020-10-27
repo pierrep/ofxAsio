@@ -1,4 +1,5 @@
 #include "UdpReceiver.h"
+#include "ofMain.h"
 
 using namespace ofxAsio;
 using namespace ofxAsio::udp;
@@ -25,6 +26,6 @@ UdpReceiver::~UdpReceiver() {
 }
 
 void UdpReceiver::start() {
-	std::printf("ofxAsio::sockets::UdpReceiver -- listening for messages at %s:%d\n", mLocalEndpoint.getIpAddress().c_str(), mLocalEndpoint.getPort());
+    ofLogVerbose() << "ofxAsio::sockets::UdpReceiver -- listening for messages at " << mLocalEndpoint.getIpAddress().c_str()<< ":" << mLocalEndpoint.getPort();
 	receive();
 }
