@@ -23,9 +23,9 @@ namespace ofxAsio {
 			static std::shared_ptr<UdpReceiver> make(std::string localAddress, int port);
 			~UdpReceiver();
 			void start();
+            UdpReceiver(int port);
+            UdpReceiver(std::string localAddress, int port);
 		protected:
-			UdpReceiver(int port);
-			UdpReceiver(std::string localAddress, int port);
 		};
 
 	}
